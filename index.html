@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sacred Timber | Divine Temple Wood Carvings & Heritage Art</title>
+  <meta name="description" content="Discover the spiritual art of Indian temple wood carvings. Exquisite, hand-chiselled devotional sculptures, deities, and sacred structures carved by master artisans.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Spark Canvas Background -->
+  <canvas id="sparks-canvas"></canvas>
+
+  <!-- Header & Navigation -->
+  <header id="main-header">
+    <div class="logo">
+      <span class="logo-icon">🔱</span>
+      <span class="logo-text">SACRED TIMBER</span>
+    </div>
+    <nav id="navbar">
+      <a href="index.html" class="nav-link active" id="nav-home">Home</a>
+      <a href="gallery.html" class="nav-link" id="nav-gallery">Gallery</a>
+      <a href="heritage.html" class="nav-link" id="nav-heritage">Heritage</a>
+      <a href="contact.html" class="nav-link" id="nav-contact">Commissions</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section id="hero" class="hero-section" style="background-image: url('assets/hero_diya.png');">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-subtitle">The Art of the Divine</span>
+        <h1 class="hero-title" id="main-title">Sacred Temple Carvings<span>Crafted in Solid Timber</span></h1>
+        <p class="hero-description">
+          Reviving the sublime craft of ancient Indian temples. Exquisite wood panels, ornate doors, and devotional structures carved by hand to invoke sacred energies.
+        </p>
+        <div class="hero-buttons">
+          <a href="gallery.html" class="btn btn-primary" id="btn-explore-gallery">Explore Creations</a>
+          <a href="contact.html" class="btn btn-secondary" id="btn-request-commission">Custom Orders</a>
+        </div>
+      </div>
+
+      <!-- Floating Scroll Indicator -->
+      <div class="floating-diya-container">
+        <span class="logo-icon" style="font-size: 1.5rem; text-shadow: 0 0 10px var(--color-gold);">🪔</span>
+        <span class="scroll-indicator">Scroll to Reveal</span>
+      </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section id="welcome" class="fade-in-section">
+      <div class="section-header">
+        <span class="section-tag">Centuries of Devotion</span>
+        <h2 class="section-title">Where Wood Becomes Sacred</h2>
+        <div class="gold-separator">
+          <span class="diya-icon">🪔</span>
+        </div>
+        <p class="section-desc">
+          Every piece of carving is born out of intense meditation, scriptural precision (Shilpa Shastras), and decades of mastery. We translate divine descriptions into physical forms using the finest teak, rosewood, and sandalwood.
+        </p>
+      </div>
+
+      <!-- Teaser Highlight Panel -->
+      <div class="heritage-teaser">
+        <div class="teaser-content">
+          <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem; color: var(--color-gold);">Chiselling the Stories of Gods</h3>
+          <p style="margin-bottom: 1.5rem; line-height: 1.8;">
+            From the massive, intricate temple doors that guard sacred sanctums to the small, intimate shrines for home altars, our carvings carry the wisdom of generations. Our master craftsmen spend thousands of hours bringing block timber to life, translating cosmic geometry into physical reality.
+          </p>
+          <p style="margin-bottom: 2rem; line-height: 1.8;">
+            Discover the strict rituals of wood selection, the visual calculations of proportion, and the ancient prayers that accompany each strike of the chisel.
+          </p>
+          <a href="heritage.html" class="btn btn-primary" id="btn-discover-heritage">Our Heritage & Craft</a>
+        </div>
+        <div class="teaser-media">
+          <img src="assets/carving_krishna.png" alt="Detailed carving of Lord Krishna" class="teaser-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Creations Grid -->
+    <section id="featured-gallery" class="fade-in-section" style="background-color: var(--bg-dark-secondary);">
+      <div class="section-header">
+        <span class="section-tag">Featured Masterpieces</span>
+        <h2 class="section-title">Devotional Masterworks</h2>
+        <div class="gold-separator">
+          <span class="diya-icon">🪔</span>
+        </div>
+        <p class="section-desc">
+          Take a look at some of our most acclaimed sacred wood carvings. Select any item to view details, craftsmanship timelines, and full dimensions.
+        </p>
+      </div>
+
+      <div class="carving-grid">
+        <!-- Card 1: Ganesha -->
+        <div class="carving-card" data-wood="Mahogany Wood" data-dimensions="24\" x 36\"" data-full-desc="A breathtaking hand-carved Ganesha sculpture in high-relief mahogany. Depicts the remover of obstacles seated on an ornate lotus throne, detailed with complex traditional floral borders and holding spiritual implements. Highly polished using natural beeswax.">
+          <div class="card-img-wrapper">
+            <img src="assets/carving_ganesha.png" alt="Lord Ganesha wood carving" class="card-img">
+            <div class="card-overlay">
+              <div class="card-info">
+                <span class="card-category">Deities & Idols</span>
+                <h3 class="card-title">Maha Ganesha Panel</h3>
+                <p class="card-desc">Detailed relief carving of Lord Ganesha in mahogany wood.</p>
+                <div class="card-footer">
+                  <span class="wood-tag">Mahogany</span>
+                  <a href="#" class="card-link" id="link-view-ganesha">View Details ➜</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Lord Krishna -->
+        <div class="carving-card" data-wood="Teak Wood" data-dimensions="30\" x 48\"" data-full-desc="This detailed panel portrays Lord Krishna playing the flute under a sprawling sacred Kadamba tree. The tree features nesting peacocks and intricate foliage, representing nature's joy at the divine melody. Richly detailed in seasoned Burma teak wood.">
+          <div class="card-img-wrapper">
+            <img src="assets/carving_krishna.png" alt="Lord Krishna wood carving" class="card-img">
+            <div class="card-overlay">
+              <div class="card-info">
+                <span class="card-category">Scriptures & Lore</span>
+                <h3 class="card-title">Venugopala Panel</h3>
+                <p class="card-desc">Lord Krishna playing the flute under the Kadamba tree.</p>
+                <div class="card-footer">
+                  <span class="wood-tag">Teak Wood</span>
+                  <a href="#" class="card-link" id="link-view-krishna">View Details ➜</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Temple Door -->
+        <div class="carving-card" data-wood="Seasoned Teak" data-dimensions="72\" x 96\"" data-full-desc="Massive ornamental double-doors designed for a temple sanctum or premium main entrance. Features geometric floral panels with heavy brass studs (knobs) and deep-relief carvings of dvarapalas (guardians) and sacred deities. Fire-treated for extreme weather resistance.">
+          <div class="card-img-wrapper">
+            <img src="assets/carving_door.png" alt="Ornate wooden temple doors" class="card-img">
+            <div class="card-overlay">
+              <div class="card-info">
+                <span class="card-category">Temple Architecture</span>
+                <h3 class="card-title">Dwara Dwara Doors</h3>
+                <p class="card-desc">Massive ornate temple doors with intricate deity panels.</p>
+                <div class="card-footer">
+                  <span class="wood-tag">Seasoned Teak</span>
+                  <a href="#" class="card-link" id="link-view-door">View Details ➜</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 4rem;">
+        <a href="gallery.html" class="btn btn-secondary" id="btn-view-all-gallery">View Full Gallery</a>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="cta" class="fade-in-section" style="background: linear-gradient(0deg, var(--bg-dark-primary) 0%, var(--wood-mahogany) 100%);">
+      <div class="section-header" style="margin-bottom: 0;">
+        <span class="section-tag">Commission a Masterpiece</span>
+        <h2 class="section-title">Bring the Divine into Your Space</h2>
+        <div class="gold-separator">
+          <span class="diya-icon">🪔</span>
+        </div>
+        <p class="section-desc" style="margin-bottom: 3rem;">
+          Whether it is a sacred temple project, a custom home mandir, or a customized deity panel, our master craftsmen are ready to bring your vision to life in glorious timber.
+        </p>
+        <a href="contact.html" class="btn btn-primary" id="btn-commission-cta">Request Consultation</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal Container -->
+  <div id="lightbox-modal" class="lightbox-modal">
+    <span class="lightbox-close" id="btn-close-lightbox">&times;</span>
+    <div class="lightbox-content">
+      <div class="lightbox-img-wrapper">
+        <img src="" alt="" class="lightbox-img">
+      </div>
+      <div class="lightbox-details">
+        <span class="lightbox-category">Category</span>
+        <h3 class="lightbox-title">Title</h3>
+        <p class="lightbox-desc">Detailed description of the wood carving, its symbolism and heritage.</p>
+        <div class="lightbox-meta">
+          <div class="meta-item">
+            <span>Timber Type</span>
+            <strong id="meta-wood">Teak Wood</strong>
+          </div>
+          <div class="meta-item">
+            <span>Dimensions</span>
+            <strong id="meta-dimension">30" x 48"</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="main-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-icon">🔱</span>
+          <span class="logo-text" style="font-size: 1.2rem;">SACRED TIMBER</span>
+        </div>
+        <p>Preserving the majestic heritage of ancient Indian temple wood carving. Hand-chiselled masterpieces infused with devotion, energy, and meticulous scriptural tradition.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Explore Pages</h4>
+        <ul>
+          <li><a href="index.html">Home Overview</a></li>
+          <li><a href="gallery.html">The Devotional Gallery</a></li>
+          <li><a href="heritage.html">Crafts & Legend</a></li>
+          <li><a href="contact.html">Commissions & Inquiries</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Our Workshop</h4>
+        <p style="color: var(--text-muted); margin-bottom: 1rem;">
+          Sacred Timber Studios<br>
+          Gopuram Temple Street, Heritage Zone<br>
+          Bengaluru, Karnataka - 560002
+        </p>
+        <p style="color: var(--color-gold);">Email: commissions@sacredtimber.art</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sacred Timber. All rights reserved in alignment with traditional heritage.</p>
+      <div class="social-links">
+        <a href="#" class="social-link" id="social-instagram"></a>
+        <a href="#" class="social-link" id="social-youtube"></a>
+        <a href="#" class="social-link" id="social-pinterest"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

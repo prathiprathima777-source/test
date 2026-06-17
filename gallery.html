@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sacred Carvings Gallery | Devotional Temple Masterpieces</title>
+  <meta name="description" content="Browse our complete gallery of handcrafted Indian temple wood carvings. Filter by deities, temple doors, panels, and columns made from premium teak and rosewood.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Spark Canvas Background -->
+  <canvas id="sparks-canvas"></canvas>
+
+  <!-- Header & Navigation -->
+  <header id="main-header" class="scrolled">
+    <div class="logo">
+      <span class="logo-icon">🔱</span>
+      <span class="logo-text">SACRED TIMBER</span>
+    </div>
+    <nav id="navbar">
+      <a href="index.html" class="nav-link" id="nav-home">Home</a>
+      <a href="gallery.html" class="nav-link active" id="nav-gallery">Gallery</a>
+      <a href="heritage.html" class="nav-link" id="nav-heritage">Heritage</a>
+      <a href="contact.html" class="nav-link" id="nav-contact">Commissions</a>
+    </nav>
+  </header>
+
+  <!-- Gallery Content -->
+  <main style="padding-top: 8rem;">
+    <section id="gallery-showcase">
+      <div class="section-header">
+        <span class="section-tag">Divine Collection</span>
+        <h1 class="section-title">The Sacred Gallery</h1>
+        <div class="gold-separator">
+          <span class="diya-icon">🪔</span>
+        </div>
+        <p class="section-desc">
+          Explore our collection of meticulously hand-carved devotional wood art. Use the tabs below to filter the carvings by sacred category. Click on any creation to open its detailed view and dimensions.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="filter-tabs" id="gallery-tabs">
+        <button class="filter-btn active" data-filter="all" id="btn-filter-all">All Carvings</button>
+        <button class="filter-btn" data-filter="deity" id="btn-filter-deity">Deities & Idols</button>
+        <button class="filter-btn" data-filter="door" id="btn-filter-door">Temple Doors</button>
+        <button class="filter-btn" data-filter="panel" id="btn-filter-panel">Pillars & Panels</button>
+      </div>
+
+      <!-- Carvings Grid -->
+      <div class="carving-grid" id="gallery-grid">
+        <!-- 1. Maha Ganesha Panel -->
+        <div class="carving-card" data-category="deity" data-wood="Mahogany Wood" data-dimensions="24\" x 36\"" data-full-desc="A breathtaking hand-carved Ganesha sculpture in high-relief mahogany. Depicts the remover of obstacles seated on an ornate lotus throne, detailed with complex traditional floral borders and holding spiritual implements. Highly polished using natural beeswax.">
+          <div class="card-img-wrapper">
+            <img src="assets/carving_ganesha.png" alt="Lord Ganesha wood carving" class="card-img">
+            <div class="card-overlay">
+              <div class="card-info">
+                <span class="card-category">Deities & Idols</span>
+                <h3 class="card-title">Maha Ganesha Panel</h3>
+                <p class="card-desc">Detailed relief carving of Lord Ganesha in mahogany wood.</p>
+                <div class="card-footer">
+                  <span class="wood-tag">Mahogany</span>
+                  <a href="#" class="card-link" id="link-gallery-ganesha">View Details ➜</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Venugopala Panel -->
+        <div class="carving-card" data-category="deity" data-wood="Teak Wood" data-dimensions="30\" x 48\"" data-full-desc="This detailed panel portrays Lord Krishna playing the flute under a sprawling sacred Kadamba tree. The tree features nesting peacocks and intricate foliage, representing nature's joy at the divine melody. Richly detailed in seasoned Burma teak wood.">
+          <div class="card-img-wrapper">
+            <img src="assets/carving_krishna.png" alt="Lord Krishna wood carving" class="card-img">
+            <div class="card-overlay">
+              <div class="card-info">
+                <span class="card-category">Deities & Idols</span>
+                <h3 class="card-title">Venugopala Panel</h3>
+                <p class="card-desc">Lord Krishna playing the flute under the Kadamba tree.</p>
+                <div class="card-footer">
+                  <span class="wood-tag">Teak Wood</span>
+                  <a href="#" class="card-link" id="link-gallery-krishna">View Details ➜</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Dwara Dwara Doors -->
+        <div class="carving-card" data-category="door" data-wood="Seasoned Teak" data-dimensions="72\" x 96\"" data-full-desc="Massive ornamental double-doors designed for a temple sanctum or premium main entrance. Features geometric floral panels with heavy brass studs (knobs) and deep-relief carvings of dvarapalas (guardians) and sacred deities. Fire-treated for extreme weather resistance.">
+          <div class="card-img-wrapper">
+            <img src="assets/carving_door.png" alt="Ornate wooden temple doors" class="card-img">
+            <div class="card-overlay">
+              <div class="card-info">
+                <span class="card-category">Temple Architecture</span>
+                <h3 class="card-title">Dwara Dwara Doors</h3>
+                <p class="card-desc">Massive ornate temple doors with intricate deity panels.</p>
+                <div class="card-footer">
+                  <span class="wood-tag">Seasoned Teak</span>
+                  <a href="#" class="card-link" id="link-gallery-door">View Details ➜</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Lord Nataraja Cosmic Dance -->
+        <div class="carving-card" data-category="deity" data-wood="Rosewood" data-dimensions="36\" x 36\"" data-full-desc="A spectacular circular panel depicting the cosmic dance (Ananda Tandava) of Lord Shiva Nataraja. Surrounded by a flaming halo (Prabha Mandala), balancing on Apasmara (ignorance), with finely chiselled flowing locks and multiple limbs holding fire and the damaru drum. Carved from deep red-brown polished rosewood.">
+          <div class="card-img-wrapper">
+            <img src="assets/carving_nataraja.png" alt="Lord Nataraja wood carving" class="card-img">
+            <div class="card-overlay">
+              <div class="card-info">
+                <span class="card-category">Deities & Idols</span>
+                <h3 class="card-title">Nataraja Cosmic Panel</h3>
+                <p class="card-desc">Circular deep-relief carving of Lord Shiva's cosmic dance.</p>
+                <div class="card-footer">
+                  <span class="wood-tag">Rosewood</span>
+                  <a href="#" class="card-link" id="link-gallery-nataraja">View Details ➜</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Kalpavriksha Panel -->
+        <div class="carving-card" data-category="panel" data-wood="Sandalwood Blend" data-dimensions="20\" x 40\"" data-full-desc="A rich panel illustrating the mythical tree of life and wish-fulfillment, the Kalpavriksha. Carved with dense multi-layered branches, intricate bird details, and hanging flower garlands. Infused with a sandalwood oil coating that gives off a faint divine fragrance.">
+          <div class="card-img-wrapper">
+            <img src="assets/hero_diya.png" alt="Kalpavriksha wood carving" class="card-img">
+            <div class="card-overlay">
+              <div class="card-info">
+                <span class="card-category">Pillars & Panels</span>
+                <h3 class="card-title">Kalpavriksha Tree Panel</h3>
+                <p class="card-desc">Mitigating details of the wish-fulfilling sacred tree.</p>
+                <div class="card-footer">
+                  <span class="wood-tag">Sandalwood Blend</span>
+                  <a href="#" class="card-link" id="link-gallery-kalpavriksha">View Details ➜</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Gopuram Pillar Panel -->
+        <div class="carving-card" data-category="panel" data-wood="Teak Wood" data-dimensions="18\" x 60\"" data-full-desc="A vertical pillar relief designed to frame temple shrines. Intricately carved with traditional geometric patterns, floral creepers, and small niches containing minor deities. Perfectly seasoned to withstand heavy structure loads and weathering.">
+          <div class="card-img-wrapper">
+            <img src="assets/carving_door.png" alt="Gopuram pillar panel carving" class="card-img" style="object-position: top;">
+            <div class="card-overlay">
+              <div class="card-info">
+                <span class="card-category">Pillars & Panels</span>
+                <h3 class="card-title">Gopuram Border Column</h3>
+                <p class="card-desc">Vertical framing column with tiered patterns and carvings.</p>
+                <div class="card-footer">
+                  <span class="wood-tag">Burma Teak</span>
+                  <a href="#" class="card-link" id="link-gallery-gopuram-column">View Details ➜</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal Container -->
+  <div id="lightbox-modal" class="lightbox-modal">
+    <span class="lightbox-close" id="btn-close-lightbox">&times;</span>
+    <div class="lightbox-content">
+      <div class="lightbox-img-wrapper">
+        <img src="" alt="" class="lightbox-img">
+      </div>
+      <div class="lightbox-details">
+        <span class="lightbox-category">Category</span>
+        <h3 class="lightbox-title">Title</h3>
+        <p class="lightbox-desc">Detailed description of the wood carving, its symbolism and heritage.</p>
+        <div class="lightbox-meta">
+          <div class="meta-item">
+            <span>Timber Type</span>
+            <strong id="meta-wood">Teak Wood</strong>
+          </div>
+          <div class="meta-item">
+            <span>Dimensions</span>
+            <strong id="meta-dimension">30" x 48"</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="main-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-icon">🔱</span>
+          <span class="logo-text" style="font-size: 1.2rem;">SACRED TIMBER</span>
+        </div>
+        <p>Preserving the majestic heritage of ancient Indian temple wood carving. Hand-chiselled masterpieces infused with devotion, energy, and meticulous scriptural tradition.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Explore Pages</h4>
+        <ul>
+          <li><a href="index.html">Home Overview</a></li>
+          <li><a href="gallery.html">The Devotional Gallery</a></li>
+          <li><a href="heritage.html">Crafts & Legend</a></li>
+          <li><a href="contact.html">Commissions & Inquiries</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Our Workshop</h4>
+        <p style="color: var(--text-muted); margin-bottom: 1rem;">
+          Sacred Timber Studios<br>
+          Gopuram Temple Street, Heritage Zone<br>
+          Bengaluru, Karnataka - 560002
+        </p>
+        <p style="color: var(--color-gold);">Email: commissions@sacredtimber.art</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sacred Timber. All rights reserved in alignment with traditional heritage.</p>
+      <div class="social-links">
+        <a href="#" class="social-link" id="social-instagram"></a>
+        <a href="#" class="social-link" id="social-youtube"></a>
+        <a href="#" class="social-link" id="social-pinterest"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

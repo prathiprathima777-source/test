@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commission Custom Temple Carvings | Contact Sacred Timber</title>
+  <meta name="description" content="Get in touch to order custom wood carvings. Request custom temple doors, home mandirs, panels, and sacred deity idols crafted by our master artisans.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Inline additions for form feedback/animations */
+    .feedback-message {
+      display: none;
+      grid-column: span 2;
+      padding: 1.5rem;
+      background: rgba(229, 184, 66, 0.1);
+      border: 1px solid var(--color-gold);
+      border-radius: var(--border-radius-sm);
+      text-align: center;
+      margin-top: 1rem;
+      animation: fadeInUp 0.5s ease forwards;
+    }
+    .feedback-message.active {
+      display: block;
+    }
+    .feedback-message h4 {
+      color: var(--color-gold);
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+    .feedback-message p {
+      color: var(--text-light);
+    }
+    @media (max-width: 768px) {
+      .feedback-message {
+        grid-column: span 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Spark Canvas Background -->
+  <canvas id="sparks-canvas"></canvas>
+
+  <!-- Header & Navigation -->
+  <header id="main-header" class="scrolled">
+    <div class="logo">
+      <span class="logo-icon">🔱</span>
+      <span class="logo-text">SACRED TIMBER</span>
+    </div>
+    <nav id="navbar">
+      <a href="index.html" class="nav-link" id="nav-home">Home</a>
+      <a href="gallery.html" class="nav-link" id="nav-gallery">Gallery</a>
+      <a href="heritage.html" class="nav-link" id="nav-heritage">Heritage</a>
+      <a href="contact.html" class="nav-link active" id="nav-contact">Commissions</a>
+    </nav>
+  </header>
+
+  <!-- Contact Form & Detail Container -->
+  <main style="padding-top: 8rem;">
+    <section id="contact-section">
+      <div class="section-header">
+        <span class="section-tag">Commission Work</span>
+        <h1 class="section-title">Request a Custom Carving</h1>
+        <div class="gold-separator">
+          <span class="diya-icon">🪔</span>
+        </div>
+        <p class="section-desc">
+          Fill out the form below to initiate a consultation with our master artisans. We build custom temple doors, home mandaps, wall panels, and deities according to scriptural proportions.
+        </p>
+      </div>
+
+      <div class="contact-container">
+        <!-- Left: Information Panel -->
+        <div class="contact-info-panel" id="info-panel">
+          <div>
+            <h2 style="font-size: 1.8rem; color: var(--color-gold); margin-bottom: 1.5rem;">The Studios</h2>
+            <p style="line-height: 1.7; margin-bottom: 2rem;">
+              You are welcome to visit our heritage carving workshop in Bengaluru to witness the craft first-hand. Please schedule an appointment in advance.
+            </p>
+          </div>
+
+          <div class="contact-details">
+            <!-- Address -->
+            <div class="contact-method">
+              <span class="contact-icon">📍</span>
+              <div class="contact-text">
+                <h4>Workshop Location</h4>
+                <p>Sacred Timber Studios, Gopuram Temple Street, Heritage Zone, Bengaluru, Karnataka - 560002</p>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-method">
+              <span class="contact-icon">📞</span>
+              <div class="contact-text">
+                <h4>Direct Inquiries</h4>
+                <p>+91 (80) 2445-9832 / +91 98845 23100</p>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-method">
+              <span class="contact-icon">✉️</span>
+              <div class="contact-text">
+                <h4>Email Support</h4>
+                <p>commissions@sacredtimber.art</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 3rem; opacity: 0.6; font-size: 0.85rem;">
+            * Consulations are based on traditional Vastu Shastra suggestions and structural engineering needs.
+          </div>
+        </div>
+
+        <!-- Right: Inquiry Form Panel -->
+        <div class="contact-form-panel">
+          <form id="commission-form" class="commission-form">
+            <!-- Name -->
+            <div class="form-group">
+              <label for="input-name" class="form-label">Full Name</label>
+              <input type="text" id="input-name" class="form-input" placeholder="e.g. Aditi Sharma" required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+              <label for="input-email" class="form-label">Email Address</label>
+              <input type="email" id="input-email" class="form-input" placeholder="e.g. aditi@domain.com" required>
+            </div>
+
+            <!-- Phone -->
+            <div class="form-group">
+              <label for="input-phone" class="form-label">Phone Number</label>
+              <input type="tel" id="input-phone" class="form-input" placeholder="e.g. +91 98765 43210" required>
+            </div>
+
+            <!-- Project Type Dropdown -->
+            <div class="form-group select-wrapper">
+              <label for="select-project" class="form-label">Project Type</label>
+              <select id="select-project" class="form-select" required>
+                <option value="" disabled selected>Select project type</option>
+                <option value="mandir">Custom Home Mandir / Altar</option>
+                <option value="door">Temple Door (Ornate Double Doors)</option>
+                <option value="deity">Deity Relief Panel (Ganesha, Krishna, etc.)</option>
+                <option value="pillar">Temple Pillar / Archway Column</option>
+                <option value="restoration">Heritage Restoration Work</option>
+              </select>
+            </div>
+
+            <!-- Wood Preference -->
+            <div class="form-group select-wrapper">
+              <label for="select-wood" class="form-label">Timber Preference</label>
+              <select id="select-wood" class="form-select" required>
+                <option value="" disabled selected>Select timber type</option>
+                <option value="teak">Burma Teak (Recommended for outdoors)</option>
+                <option value="rosewood">Indian Rosewood (Recommended for dark reliefs)</option>
+                <option value="sandalwood">Sandalwood (Small deity figures/altars)</option>
+                <option value="mahogany">Mahogany Wood</option>
+                <option value="undecided">Not sure (Artisan's suggestion)</option>
+              </select>
+            </div>
+
+            <!-- Dimensions -->
+            <div class="form-group">
+              <label for="input-dimensions" class="form-label">Approximate Size / Dimensions</label>
+              <input type="text" id="input-dimensions" class="form-input" placeholder="e.g. 3ft x 5ft or custom sizes">
+            </div>
+
+            <!-- Project Description -->
+            <div class="form-group full-width">
+              <label for="textarea-desc" class="form-label">Project Details & Iconography Requirements</label>
+              <textarea id="textarea-desc" class="form-textarea" placeholder="Please describe the deity, postures, floral borders, or specific spiritual motifs you'd like included..." required></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group full-width" style="margin-top: 1rem;">
+              <button type="submit" class="btn btn-primary" id="btn-submit-commission" style="width: 100%;">Submit Inquiry & Pray</button>
+            </div>
+
+            <!-- Success Notification -->
+            <div id="form-success" class="feedback-message">
+              <h4>🪔 Inquiry Received Gracefully</h4>
+              <p>Thank you for initiating your commission. Our master artisan will review the scriptures and get in touch with you within 3 business days to discuss details.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="main-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-icon">🔱</span>
+          <span class="logo-text" style="font-size: 1.2rem;">SACRED TIMBER</span>
+        </div>
+        <p>Preserving the majestic heritage of ancient Indian temple wood carving. Hand-chiselled masterpieces infused with devotion, energy, and meticulous scriptural tradition.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Explore Pages</h4>
+        <ul>
+          <li><a href="index.html">Home Overview</a></li>
+          <li><a href="gallery.html">The Devotional Gallery</a></li>
+          <li><a href="heritage.html">Crafts & Legend</a></li>
+          <li><a href="contact.html">Commissions & Inquiries</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Our Workshop</h4>
+        <p style="color: var(--text-muted); margin-bottom: 1rem;">
+          Sacred Timber Studios<br>
+          Gopuram Temple Street, Heritage Zone<br>
+          Bengaluru, Karnataka - 560002
+        </p>
+        <p style="color: var(--color-gold);">Email: commissions@sacredtimber.art</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sacred Timber. All rights reserved in alignment with traditional heritage.</p>
+      <div class="social-links">
+        <a href="#" class="social-link" id="social-instagram"></a>
+        <a href="#" class="social-link" id="social-youtube"></a>
+        <a href="#" class="social-link" id="social-pinterest"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    // Form interceptor for local aesthetic feedback
+    document.getElementById('commission-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const successMsg = document.getElementById('form-success');
+      successMsg.classList.add('active');
+      this.reset();
+      
+      // Auto scroll down slightly to focus message
+      successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      
+      // Clear message after 10 seconds
+      setTimeout(() => {
+        successMsg.classList.remove('active');
+      }, 10000);
+    });
+  </script>
+</body>
+</html>
